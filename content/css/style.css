@@ -374,25 +374,66 @@ h1, h2, h3, h4, h5, h6 {
   width: 585px;
   color: #ffb727;
 }
-#Projects h2 {
+#Projects .what-we-do-content h2 {
   font-size: 50px;
   margin-bottom: 30px;
   font-size: 52px;
   margin-left: 100px;
   width: 585px;
 }
-#Projects p {
+#Projects .what-we-do-content p {
   margin-left: 100px;
   margin-bottom: 0;
   width: 585px;
 }
-#Projects a {
+#Projects .what-we-do-content a {
   margin-top: 40px;
   margin-left: 100px;
   color: #ffb727;
   border-color: #ffb727;
 }
-#About a:hover {
+#Projects a:hover {
   background-color: #ffb727;
   color: black;
+}
+#Projects-cards-container{
+  display: flex;
+  /* border: 1mm solid white; */
+}
+#Projects-cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+    margin-left: -15px;
+  /* border: 1mm solid white; */
+}
+#Projects-cards-container h3{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#Projects-cards-container .col-lg-6{
+  display: flex;
+  max-width: 50%;
+  /* border: 1mm solid teal; */
+}
+#Projects-cards-container img {
+  width: 60px;
+  height: 61px;
+}
+#Projects-cards-container .what-we-do-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px dashed #676a6a;
+  padding: 20px;
+  margin-bottom: 30px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 300px;
+  height: 280px;
+}
+#Projects-card-mt30 {
+ margin-top: 30px;
 }
