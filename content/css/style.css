@@ -447,19 +447,71 @@ h1, h2, h3, h4, h5, h6 {
 #Works {
   z-index: 10;
   position: absolute;
-  background-color: black;
-  color: #eee;
   width: 100%;
-  /* padding-top: 200px; */
-  padding-bottom: 200px;
-  overflow: hidden;
+  background-color: black;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
 }
 #Works h1 {
   font-family: 'Roboto';
   font-weight: 700;
-  text-transform: uppercase;
-  display: block;
   color: #ffb727;
   font-size: 36px;
+}
+#Works p {
+  font-family: 'Roboto';
+  color: white;
+}
+#Works-container {
+  display: flex;
+}
+#Works-cards-container {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 255px;
+  height: 355px;
+  border-radius: 1em;
+  background: linear-gradient(50deg, #2a5a3b, #1e4886);
+  overflow: hidden;
+  margin: 15px;
+}
+#Works-cards-container::before {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 35px;
+  top: 0;
+  right: 35px;
+  transition: 1.9s;
+  background: linear-gradient(50deg, #00ff59, #02b3ff);
+  transform: rotate(-45deg) translate(0, -100px);
+}
+#Works-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 247px;
+  height: 347px;
+  padding: 1em;
   text-align: center;
+  background: #171614;
+  border-radius: .8em;
+  color: #858585;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 2;
+}
+#Works-card:hover {
+  color: #fff;
+}
+#Works-cards-container:hover::before {
+  animation: effect 1.9s;
+}
+@keyframes effect {
+  100% {
+    transform: rotate(-45deg) translate(0, 450px);
+  }
 }
