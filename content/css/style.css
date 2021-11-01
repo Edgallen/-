@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   display: flex;
   text-align: left;
-  /* border-bottom: 1px das hed white; */
+  /* border-bottom: 1px dashed white; */
 }
 #About-container:after {
   border-bottom: 1px dashed white;
@@ -459,59 +459,137 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffb727;
   font-size: 36px;
 }
+#Works h2 {
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: #ffb727;
+  font-size: 20px;
+}
 #Works p {
   font-family: 'Roboto';
   color: white;
 }
+
+
+/* Вставка */
 #Works-container {
+  width: 100%;
+  height: 100%;
   display: flex;
-}
-#Works-cards-container {
-  display: grid;
-  place-items: center;
-  position: relative;
-  width: 255px;
-  height: 355px;
-  border-radius: 1em;
-  background: linear-gradient(50deg, #2a5a3b, #1e4886);
-  overflow: hidden;
-  margin: 15px;
-}
-#Works-cards-container::before {
-  content: "";
-  position: absolute;
-  width: 450px;
-  height: 35px;
-  top: 0;
-  right: 35px;
-  transition: 1.9s;
-  background: linear-gradient(50deg, #00ff59, #02b3ff);
-  transform: rotate(-45deg) translate(0, -100px);
-}
-#Works-card {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  width: 247px;
-  height: 347px;
-  padding: 1em;
-  text-align: center;
-  background: #171614;
-  border-radius: .8em;
-  color: #858585;
-  cursor: pointer;
-  overflow: hidden;
-  z-index: 2;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-#Works-card:hover {
+#Works-container i {
+  opacity: 0;
+  font-size: 18px;
+  color: #fff;
+  will-change: transform;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#Works-container h2 {
+  pointer-events: none;
+}
+#Works-container .card {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background-color: black;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+#Works-container .card h2 {
+  z-index: 101;
+  font-family: "Roboto";
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+  font-weight: 700;
   color: #fff;
 }
-#Works-cards-container:hover::before {
-  animation: effect 1.9s;
+#Works-container .card .fa-arrow-right {
+  z-index: 100;
+  position: absolute;
+  right: 75px;
+  bottom: 25px;
+  font-size: 40px;
+  cursor: pointer;
 }
-@keyframes effect {
-  100% {
-    transform: rotate(-45deg) translate(0, 450px);
-  }
+#Works-container .card p {
+  z-index: 101;
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  color: #333;
+  opacity: 0.7;
+  font-size: 12px;
+  letter-spacing: 1px;
+  writing-mode: vertical-lr;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#Works-container .card .pic {
+  z-index: 100;
+  width: 400px;
+  height: 200px;
+  background-image: url("../imgs/works/Ex.png");
+  background-size: 100% 100%;
+  filter: grayscale(100%);
+}
+#Works-container .card:hover i {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+#Works-container .card button {
+  z-index: 100;
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffb727;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  mix-blend-mode: hard-light;
+}
+#Works-container .card button i {
+  font-size: 3rem;
+}
+#Works-container .card:hover button {
+  transform: scale(16.5);
+}
+#Works-container .card:hover p {
+  color: #fff;
+}
+#Works-container .card:hover .pic {
+  filter: grayscale(0);
+}
+#Works-container .card2 .pic {
+  background-image: url("../imgs/works/bex.png");
+}
+#Works-container .card3 .pic {
+  background-image: url("../imgs/works/bournemouth.png");
+}
+#Works-container .card4 .pic {
+  background-image: url("../imgs/works/audi.jpg");
+}
+#Works-container .card5 .pic {
+  background-image: url("../imgs/works/neronski\ 1.PNG");
+}
+#Works-container .card6 .pic {
+  background-image: url("../imgs/works/neronski\ 2.png");
+}
+#Works-container .card7 .pic {
+  background-image: url("../imgs/works/RaHa.png");
+}
+#Works-container .card8 .pic {
+  background-image: url("../imgs/works/voika.png");
 }
