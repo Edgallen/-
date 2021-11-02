@@ -183,9 +183,10 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 3;
 }
 #Lantern h2 {
-  color: #eee;
+  font-family: 'Inter';
+  color: white;
   margin-bottom: 50px;
-  font-size: 35px;
+  font-size: 50px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -285,6 +286,7 @@ h1, h2, h3, h4, h5, h6 {
   align-content: center;
 }
 #About span {
+  font-family: "Inter";
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -295,6 +297,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffb727;
 }
 #About h2 {
+  font-family: "Inter";
   font-size: 50px;
   margin-bottom: 30px;
   font-size: 52px;
@@ -313,6 +316,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 585px;
 }
 #About a {
+  font-family: "Inter";
   display: block;
   margin: auto;
   float: left;
@@ -362,6 +366,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 #Projects span {
+  font-family: "Inter";
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -373,20 +378,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffb727;
 }
 #Projects .what-we-do-content h2 {
+  font-family: "Inter";
   font-size: 50px;
   margin-bottom: 30px;
   font-size: 52px;
-  /* margin-left: 100px; */
   width: 585px;
 }
 #Projects .what-we-do-content p {
-  /* margin-left: 100px; */
   margin-bottom: 0;
   width: 585px;
 }
 #Projects .what-we-do-content a {
+  font-family: "Inter";
   margin-top: 40px;
-  /* margin-left: 100px; */
   color: #ffb727;
   border-color: #ffb727;
 }
@@ -396,7 +400,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #Projects-cards-container{
   display: flex;
-  /* border: 1mm solid white; */
 }
 #Projects-cards-container{
   display: flex;
@@ -404,16 +407,15 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: flex-end;
   margin-right: -15px;
     margin-left: -15px;
-  /* border: 1mm solid white; */
 }
 #Projects-cards-container h3{
+  font-family: "Inter";
   margin-top: 15px;
   margin-bottom: 15px;
 }
 #Projects-cards-container .col-lg-6{
   display: flex;
   width: 374px;
-  /* border: 1mm solid teal; */
 }
 #Projects-card-mt30 {
   margin-top: 30px;
@@ -454,140 +456,43 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }
 #Works h1 {
-  font-family: 'Roboto';
-  font-weight: 700;
+  font-family: "Inter";
   color: #ffb727;
-  font-size: 36px;
+  font-size: 74px;
+  margin-bottom: 50px;
 }
+
 #Works h2 {
   font-family: 'Roboto';
   font-weight: 700;
   color: #ffb727;
   font-size: 20px;
 }
-#Works p {
-  font-family: 'Roboto';
-  color: white;
-}
 
 
 /* Вставка */
 #Works-container {
-  width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+  justify-content: center;
+  max-width: 1420px;
+}
+#Works-cards {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-#Works-container i {
-  opacity: 0;
-  font-size: 18px;
-  color: #fff;
-  will-change: transform;
-  -webkit-transform: scale(0.1);
-  transform: scale(0.1);
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+#Works-container img {
+  height: 300px;
+  margin: 20px;
 }
-#Works-container h2 {
-  pointer-events: none;
-}
-#Works-container .card {
-  position: relative;
-  width: 400px;
-  height: 200px;
-  background-color: black;
-  overflow: hidden;
-  margin-bottom: 4px;
-}
-#Works-container .card h2 {
-  z-index: 101;
-  font-family: "Roboto";
+#Works-card-playButton {
   position: absolute;
-  bottom: 0;
-  font-size: 30px;
-  font-weight: 700;
-  color: #fff;
+  display: block;
+  text-align: center;
+  margin-top: 140px;
+  margin-left: 140px;
 }
-#Works-container .card .fa-arrow-right {
-  z-index: 100;
-  position: absolute;
-  right: 75px;
-  bottom: 25px;
-  font-size: 40px;
-  cursor: pointer;
+#Works-card-playButton img {
+  margin: 0;
+  height: 90px;
 }
-#Works-container .card p {
-  z-index: 101;
-  position: absolute;
-  top: 20px;
-  right: 70px;
-  color: #333;
-  opacity: 0.7;
-  font-size: 12px;
-  letter-spacing: 1px;
-  writing-mode: vertical-lr;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-#Works-container .card .pic {
-  z-index: 100;
-  width: 400px;
-  height: 200px;
-  background-image: url("../imgs/works/Ex.png");
-  background-size: 100% 100%;
-  filter: grayscale(100%);
-}
-#Works-container .card:hover i {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-#Works-container .card button {
-  z-index: 100;
-  position: absolute;
-  right: 14px;
-  bottom: 14px;
-  width: 30px;
-  height: 30px;
-  background-color: #ffb727;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  outline: none;
-  transition: all 0.3s ease;
-  mix-blend-mode: hard-light;
-}
-#Works-container .card button i {
-  font-size: 3rem;
-}
-#Works-container .card:hover button {
-  transform: scale(16.5);
-}
-#Works-container .card:hover p {
-  color: #fff;
-}
-#Works-container .card:hover .pic {
-  filter: grayscale(0);
-}
-#Works-container .card2 .pic {
-  background-image: url("../imgs/works/bex.png");
-}
-#Works-container .card3 .pic {
-  background-image: url("../imgs/works/bournemouth.png");
-}
-#Works-container .card4 .pic {
-  background-image: url("../imgs/works/audi.jpg");
-}
-#Works-container .card5 .pic {
-  background-image: url("../imgs/works/neronski\ 1.PNG");
-}
-#Works-container .card6 .pic {
-  background-image: url("../imgs/works/neronski\ 2.png");
-}
-#Works-container .card7 .pic {
-  background-image: url("../imgs/works/RaHa.png");
-}
-
