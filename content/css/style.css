@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -448,7 +447,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #Works {
   z-index: 10;
-  position: absolute;
+  position: relative;
   width: 100%;
   background-color: black;
   display: grid;
@@ -495,4 +494,86 @@ h1, h2, h3, h4, h5, h6 {
 #Works-card-playButton img {
   margin: 0;
   height: 90px;
+}
+
+/*--------------------------------------------------------------
+# Price Section
+--------------------------------------------------------------*/
+#Price {
+  z-index: 10;
+  position: relative;
+  width: 100%;
+  background-color: black;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+/* Стоимость */
+#Price h2 {
+  position: absolute;
+  font-family: "Inter";
+  color: #ffb727;
+  font-size: 76px;
+  margin-top: 250px;
+  font-weight: 900;
+  width: 370px;
+  margin: 200px -28px 0 -186px;
+}
+#Price p {
+  font-family: "Roboto";
+  color: white;
+}
+#Price-container {
+  display: flex;
+  align-items: center;
+}
+#Price-title-container {
+  margin-right: 40px;
+}
+#Price-title-container img {
+  width: 400px;
+}
+#Price-title-container p {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  width: 400px;
+}
+
+/* Цитата */
+#Price-contacts-container  {
+  margin-top: 150px;
+  margin-left: 40px;
+  width: 400px;
+  height: 490px;
+  border: 1px dashed white;
+  /* background-color: #eef5fd; */
+}
+#Price-contacts-quote {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+#Price-contacts-container p  {
+  font-family: "Roboto";
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  padding: 79px 20px 0 20px;
+}
+#Price-contacts-container a {
+  font-family: "Inter";
+  display: block;
+  margin: auto;
+  float: left;
+  margin-top: 30px;
+  color: #ffb727;
+  border-color: #ffb727;
+}
+#Price-contacts-container a:hover {
+  background-color: #ffb727;
+  color: black;
 }
