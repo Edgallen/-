@@ -657,6 +657,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Контакты */
 #Contacts-card img {
+  height: 25px;
+  width: 25px;
+}
+#Contacts-card-info-card-youtube img{
   height: 30px;
   width: 30px;
 }
@@ -705,15 +709,36 @@ h1, h2, h3, h4, h5, h6 {
 #Contacts-card-info-cards-container {
   display: flex;
   align-items: center;
+  margin-left: 65px;
 }
 #Contacts-card-info-card {
-  margin: 5px;
+  margin-left: 10px;
 }
-#Contacts-card-info-card-youtube img{
-  height: 38px;
-  width: 38px;
+#Contacts-card-info-card a {
+  width: 46px;
+  border-color: #ffb727;
+}
+#Contacts-card-info-card a:hover {
+  color: black;
 }
 #Contacts-card-title-social h2 {
   margin-top: 40px;
   margin-left: 50px;
 }
+
+/*--------------------------------------------------------------
+# Footer Section
+--------------------------------------------------------------*/
+
+#Footer {
+  z-index: 10;
+  position: relative;
+  width: 100%;
+  background-color: black;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#Footer a {
+  border-color: #ffb727;
+}
+
