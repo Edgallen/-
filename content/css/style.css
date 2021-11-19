@@ -197,6 +197,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   z-index: 3;
   background-color: rgba(255, 255, 255, 0);
+  text-align: center;
 }
 #Lantern img {
   width: 300px;
@@ -282,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
 #About-title-container {
   display: flex;
   flex-direction: column;
-  margin: 0 56px 56px 56px;
+  margin: 0 0 56px 5%;
 }
 #About-title-container h2 {
  font-family: var(--main-font);
@@ -310,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
 }
 #Abount-content-info-container {
-  margin: 56px;
+  margin-left: 5%;
 }
 #Abount-content-info-container button {
   font-family: "Inter";
@@ -329,6 +330,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  /* margin-right: 50%; */
+  margin-left: 5%;
 }
 #About-content-photos-container img {
   margin: 20px;
@@ -435,7 +438,28 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  height: 600px;
+}
+#Price-title-container h1 {
+  font-family: var(--main-font);
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: var(--primary-color)
+}
+#Price-title-container p {
+  font-family: var(--main-font);
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 80px;
+  width: 600px;
+}
+#Price-title-container h2 {
+  font-family: var(--main-font);
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 80px;
+  text-align: center;
 }
 #Price-title-arrow {
   display: flex;
@@ -443,19 +467,45 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   flex-direction: column;
 }
+#Price-title-arrow img {
+  height: 80px;
+  margin-top: 60px;
+}
 #Price-works-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 200px 0 200px 0;
 }
-#Price-works-text {
+#Price-works-text-white, #Price-works-text-yellow {
   margin-right: auto;
   margin-left: auto;
+}
+#Price-works-text-white h1 {
+  font-family: var(--main-font);
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+#Price-works-text-yellow h1 {
+  font-family: var(--main-font);
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+#Price-works-text-white p, #Price-works-text-yellow p {
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-weight: 200;
+  width: 600px;
+  margin-top: 80px;
 }
 #Price-works-img {
   margin-right: auto;
   margin-left: auto;
+}
+#Price-works-img img {
+  height: 300px;
 }
 
 /*--------------------------------------------------------------
@@ -469,7 +519,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: black;
   background-color: #000000;
   background-image: var(--main-bg);
-  padding-bottom: px;
 }
 #Contacts-container {
   display: flex;
@@ -627,6 +676,62 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 40px;
   margin-left: 50px;
 }
+
+
+/*--------------------------------------------------------------
+# Brands Section
+--------------------------------------------------------------*/
+#Brands {
+  z-index: 10;
+  position: relative;
+  width: 100%;
+  background-color: black;
+  background-color: #000000;
+  background-image: var(--main-bg);
+  padding-top: 140px;
+}
+#Brands-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 140px 0 140px 0;
+}
+#Brands-title  {
+  margin-bottom: 150px;
+}
+#Brands-title h1 {
+  color: white;
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 7rem;
+}
+#Brands-logo-bg {
+  background-image: url(/content/imgs/Rectangle\ 35.svg);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+#Brands-logo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 800px;
+}
+#Brands-logo-card {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+#Brands-logo-card img {
+  margin: 40px 40px
+}
+
 
 /*--------------------------------------------------------------
 # Footer Section
