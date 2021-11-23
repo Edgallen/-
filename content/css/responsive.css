@@ -171,31 +171,54 @@
 
   /* Contacts section */
   #Contacts-container {
+    padding-top: 70px;
     flex-direction: column-reverse;
   }
+  #Contacts-form-container {
+    margin-top: 60px;
+  }
   #Contacts h1 {
-    font-size: 2rem;
-    margin: 0 0 20px 7px;
+    font-size: 2.05rem;
+    text-align: center;
+    margin: 0 0 20px 0px;
   }
   #Contacts p {
-    font-family: var(--secondary-font);
-    color: rgba(255, 255, 255, 0.603);
-    font-size: 14px;
-    margin: 10px;
-    width: 300px;
+    max-width: 300px;
   }
   #Contacts input  {
-    background-color: black;
-    margin: 10px;
     max-width: 300px;
-    border-color: white;
-    border-radius: 0;
   }
   #Contacts textarea {
-    background-color: black;
-    margin: 10px;
     max-width: 300px;
-    border-color: white;
-    border-radius: 0;
+  }
+  #Contacts-cards-container {
+    margin: 0;
+  }
+  #Contacts-card h2 {
+    font-size: 28px;
+    margin-left: 20px;
+    font-weight: 600;
+  }
+  #Contacts-card-title-social h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 42px;
+  }
+  #Contacts-card-info-cards-container {
+    margin-left: 15px;
+  }
+
+  /* Footer */
+  #Footer {
+    padding-bottom: 0;
+  }
+  #Footer-nav-container {
+    justify-content: center;
+  }
+  #Footer-nav-menu {
+    display: none;
+  }
+  #Footer-nav-logo img {
+    margin-right: 10px;
   }
 }
