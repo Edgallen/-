@@ -6,9 +6,63 @@
 }
 
 /*  */
+/* Tablets */
+/*  */
+@media (max-width: 991.98px){
+
+  /* Lantern-section */
+  #Lantern h2 {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 2.2rem;
+  }
+
+  /* About-section */
+  #About-container {
+    padding: 100px 0 70px 0;
+  }
+  #About-container-container {
+    justify-content: flex-start;
+  }
+  #About-title-container h2 {
+    font-size: 2rem;
+   }
+   #About-title-container h1 {
+    font-size: 3rem;
+  }
+  #About-content-container p {
+    font-size: 1.2rem;
+    min-width: 280px;
+    margin-right: 10%;
+  }
+  #About-content-photos-row1 {
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-items: stretch; */
+    max-width: 200px;
+  }
+  #About-content-photos-row2 {
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-items: stretch; */
+    max-width: 200px;
+  }
+  #About-content-photos-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  #About-content-photos-container img {
+    height: 20%;
+    margin-right: 10%;
+    margin-left: 0;
+  }
+}
+
+/*  */
 /* Mobile-phones */
 /*  */
-@media (max-width: 575px) {
+@media (max-width: 575.98px) 
+ {
 
   /* Lantern section  */
   #Lantern h1 {
@@ -21,28 +75,31 @@
     font-weight: 600;
     font-size: 1.8rem;
   }
+  #Lantern .Lantern-container {
+    /* background-color: white; */
+    background-image: url(../imgs/Vector.png);
+    background-repeat: no-repeat;
+    background-position: -90% 0%;
+  }
+  #iframe-container {
+    display: none;
+  }
 
   /* About section  */
   #About-container {
     padding: 100px 0 70px 0;
   }
   #About-title-container h2 {
-    font-family: var(--main-font);
     font-size: 1.5rem;
-    font-weight: 900;
    }
    #About-title-container h1 {
-    font-family: var(--main-font);
     font-size: 2rem;
-    font-weight: 900;
-    color: var(--primary-color);
   }
   #About-content-container {
     display: flex;
     flex-direction: column;
   }
   #About-content-container p {
-    font-family: var(--secondary-font);
     font-size: 22px;
     min-width: 100px;
     margin-right: 10%;
