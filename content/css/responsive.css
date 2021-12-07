@@ -16,6 +16,13 @@
     font-weight: 600;
     font-size: 2.2rem;
   }
+  #Lantern .Lantern-container {
+    background-image: url(../imgs/swirl.jfif);
+    background-repeat: no-repeat;
+  }
+  #iframe-container {
+    display: none;
+  }
 
   /* About-section */
   #About-container {
@@ -56,6 +63,156 @@
     margin-right: 10%;
     margin-left: 0;
   }
+
+  /* Workds section */
+  #Works-container img {
+    height: 200px;
+    margin: 20px;
+  }
+  #Works-card-playButton {
+    margin-top: 70px;
+    margin-left: 80px;
+  }
+  #Works-card-playButton img {
+    margin: 0;
+    height: 100px;
+  }
+
+  /* Price section  */
+  #Price-container {
+    padding-bottom: 150px;
+  }
+  #Price-title-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    padding-top: 20%;
+  }
+  #Price-works-container-white,
+  #Price-works-container-yellow {  
+    padding: 150px 0 150px 0;
+  }
+  #Price-title-container h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--primary-color)
+  }
+  #Price-title-container p {
+    font-size: 1.5rem;
+    max-width: 500px;
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
+  }
+  #Price-title-container h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-top: 100px;
+  }
+  #Price-title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+  }
+  #Price-title-arrow img {
+    height: 100px;
+    margin-top: 50px;
+  }
+  #Price-works-text-white h1,
+  #Price-works-text-yellow h1 {
+    font-size: 3rem;
+  }
+  #Price-works-text-white {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  #Price-works-text-yellow {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 1%;
+  }
+  #Price-works-text-white p,
+  #Price-works-text-yellow p {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 1.4rem;
+    max-width: 370px;
+    margin-top: 30px;
+  }
+  #Price-works-img {
+    margin-right: auto;
+  }
+  #Price-works-img img {
+    height: 230px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  /* Brands section  */
+  #Brands-container {
+    padding: 70px 0 0 0;
+  }
+  #Brands-title h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  #Brands-logo-bg {
+    background-color: var(--primary-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #Brands-logo-container {
+    justify-content: space-evenly;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #Brands-logo-card img {
+    margin: 50px 20px;
+    width: 150px;
+  }
+
+  /* Contacts section */
+  #Contacts-container {
+    padding-top: 70px;
+    flex-direction: row;
+  }
+  #Contacts-form-container {
+    margin-top: 60px;
+  }
+  #Contacts h1 {
+    font-size: 2.05rem;
+    text-align: center;
+    margin: 0 0 20px 0px;
+  }
+  #Contacts p {
+    max-width: 300px;
+  }
+  #Contacts input  {
+    max-width: 300px;
+  }
+  #Contacts textarea {
+    max-width: 300px;
+  }
+  #Contacts-cards-container {
+    margin: 0;
+  }
+  #Contacts-card h2 {
+    font-size: 28px;
+    margin-left: 20px;
+    font-weight: 600;
+  }
+  #Contacts-card-title-social h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 42px;
+  }
+  #Contacts-card-info-cards-container {
+    margin-left: 15px;
+  }
+  
 }
 
 /*  */
@@ -76,10 +233,8 @@
     font-size: 1.8rem;
   }
   #Lantern .Lantern-container {
-    /* background-color: white; */
-    background-image: url(../imgs/Vector.png);
+    background-image: url(../imgs/swirl.jfif);
     background-repeat: no-repeat;
-    background-position: -90% 0%;
   }
   #iframe-container {
     display: none;
@@ -113,7 +268,7 @@
     padding: 50px 0 70px 0;
   }
   #Works h1 {
-    font-size: 3.7rem;
+    font-size: 2.7rem;
     font-weight: 900;
     text-align: center;
     margin-bottom: 30px;
@@ -209,7 +364,7 @@
     padding: 70px 0 0 0;
   }
   #Brands-title h1 {
-    font-size: 4rem;
+    font-size: 2.7rem;
     text-align: center;
   }
   #Brands-logo-bg {
