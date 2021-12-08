@@ -42,26 +42,8 @@
     min-width: 280px;
     margin-right: 10%;
   }
-  #About-content-photos-row1 {
-    flex-direction: column;
-    align-items: flex-start;
-    /* align-items: stretch; */
-    max-width: 200px;
-  }
-  #About-content-photos-row2 {
-    flex-direction: column;
-    align-items: flex-start;
-    /* align-items: stretch; */
-    max-width: 200px;
-  }
   #About-content-photos-container {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  #About-content-photos-container img {
-    height: 20%;
-    margin-right: 10%;
-    margin-left: 0;
+    display: none;
   }
 
   /* Workds section */
@@ -198,6 +180,8 @@
   }
   #Contacts-cards-container {
     margin: 0;
+    margin-left: 8%;
+    margin-top: 6%;
   }
   #Contacts-card h2 {
     font-size: 28px;
@@ -211,6 +195,20 @@
   }
   #Contacts-card-info-cards-container {
     margin-left: 15px;
+  }
+
+  /* Footer */
+  #Footer {
+    padding-bottom: 0;
+  }
+  #Footer-nav-container {
+    justify-content: center;
+  }
+  #Footer-nav-menu {
+    display: none;
+  }
+  #Footer-nav-logo img {
+    margin-right: 10px;
   }
   
 }
