@@ -335,10 +335,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   align-items: flex-end;
 }
-#Abount-content-info-container {
-
-}
-
 /*--------------------------------------------------------------
 # Works Section
 --------------------------------------------------------------*/
@@ -442,15 +438,23 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 80px;
   text-align: center;
 }
+#Price-arrow-button {
+  margin-top: 5%;
+  transition: 0.4s;
+  color: var(--primary-color);
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+#Price-arrow-button i {
+  font-size: 64px;
+}
+#Price-arrow-button:hover {
+ color: white;
+}
 #Price-title-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-#Price-title-arrow img {
-  height: 80px;
-  margin-top: 60px;
 }
 #Price-works-container-white,#Price-works-container-yellow  {
   display: flex;
@@ -622,8 +626,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
 }
-
-/* Контакты */
 #Contacts-card img {
   height: 25px;
   width: 25px;
@@ -638,6 +640,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   color: white;
   margin-left: 20px;
+  font-weight: 600;
+}
+#Contacts-card h3 {
+  font-family: var(--main-font);
+  font-size: 28px;
+  font-weight: 300;
+  color: white;
+  margin-top: 40px;
+  margin-left: 50px;
   font-weight: 600;
 }
 #Contacts-card-title {
