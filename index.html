@@ -39,6 +39,9 @@
   <!-- fontawesome -->
   <link href="/lib/fontawesome/css/all.css" rel="stylesheet">
 
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
  <body>
@@ -67,22 +70,30 @@
       </div>
       <img src="content/imgs/Logo.png" alt="Lantern-media logo">
       <!-- <h1>Lantern Media</h1> -->
-      <h2 id="print">Повысьте узнаваемость вашего бренда прямо сейчас</h2>
+      <h2>Повысьте узнаваемость вашего бренда прямо сейчас</h2>
       <a href="#About" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
     </div>
   </section><!-- End Lantern -->
 
   <!-- About Section -->
-  <section id="About" >
-    <div id="About-container" >
+  <section id="About" class="about" >
+    <div id="About-container" class="about__container" >
 
-      <div id="About-title-container" >
+      <div id="About-title-container"
+       class="about__title"
+       data-aos="fade-right"
+       data-aos-easing="ease-in-out"
+       >
         <h2>О нас</h2>
         <h1>Мы снимаем профессиональные клипы</h1>
       </div>
 
-      <div id="About-content-container">
-        <div id="Abount-content-info-container" >
+      <div id="About-content-container"
+       class="about__data">
+        <div id="Abount-content-info-container"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+         >
           <p><span>Lantern media</span> -
             это, прежде всего, современный и креативный
             подход к видео-производству.
@@ -91,9 +102,14 @@
             За плечами у нас более 5 лет успешного опыта работы
             на рынках России и Великобритании.
           </p>
-          <button href="#Works" role="button" class="btn btn-outline">Наши работы</button>
+          <a href="#Works" class="btn-scroll" id="Price-arrow-button"><button href="#Works" role="button" class="btn btn-outline">Наши работы</button></a>
         </div>
-        <div id="About-content-photos-container" >
+        <div
+          id="About-content-photos-container"
+          class="about__img"
+          data-aos="fade-left"
+          data-aos-easing="ease-in-out"
+        >
           <div id="About-content-photos-row1" >
             <img src="content/imgs/about/About 1.png" alt="Cameraman">
             <img src="content/imgs/about/About 3.png" alt="Red camera">
@@ -112,8 +128,17 @@
   <!-- Works section -->
   <section id="Works">
     <div id="Works-bg">
-      <h1>Наши Работы</h1>
-      <div id="Works-container">
+      <h1
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="100"
+      >Наши Работы</h1>
+      <div
+        id="Works-container"
+        data-aos="fade-left"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="100"
+       >
         <div id="Works-cards">
           <div id="Works-card">
             <a href="https://www.youtube.com/watch?v=HNG7REu33a0" id="Works-card-playButton" data-lity>
@@ -173,7 +198,12 @@
     <div id="Price-container" >
 
       <div id="Price-title-container">
-        <div id="Price-title-text" >
+        <div
+         id="Price-title-text"
+         data-aos="fade-right"
+         data-aos-easing="ease-in-out"
+         data-aos-delay="100"
+        >
           <h1>Стоимость</h1>
           <p>
             К каждому клиенты мы подходим
@@ -181,17 +211,36 @@
             заказчика, чтобы собрать из них клип. 
           </p>
         </div>
-        <div id="Price-title-arrow" >
+        <div
+         id="Price-title-arrow"
+         data-aos="fade-left"
+         data-aos-easing="ease-in-out"
+         data-aos-delay="100"
+        >
           <h2>Узнать как происходит создание клипа</h2>
-          <a href="index.html#Price-works-container-white" class="btn-scroll" id="Price-arrow-button"><i class="bx bx-chevron-down"></i></a>
+          <a href="#Price-works-container-white" class="btn-scroll" id="Price-arrow-button"><i class="bx bx-chevron-down"></i></a>
         </div>
       </div>
 
-      <div id="Price-works-container-white" >
-        <div id="Price-works-img">
+      <div
+        id="Price-works-container-white"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="100"
+      >
+        <div
+          id="Price-works-img"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="100"
+        >
           <img src="content/imgs/price/notebook.png" alt="Notebook">
         </div>
-        <div id="Price-works-text-white">
+        <div
+          id="Price-works-text-white"
+          data-aos="fade-left"
+          data-aos-easing="ease-in-out"
+        >
           <h1>Изучение ТЗ</h1>
           <p>
             На этом этапе начинается утверждение 
@@ -201,8 +250,15 @@
         </div>
       </div>
 
-      <div id="Price-works-container-yellow" >
-        <div id="Price-works-text-yellow">
+      <div
+        id="Price-works-container-yellow"
+      >
+        <div
+          id="Price-works-text-yellow"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="100"
+        >
           <h1>Пре-продакшн</h1>
           <p>
             На этом этапе начинается утверждение 
@@ -210,16 +266,31 @@
             съёмочного процесса.
           </p>
         </div>
-        <div id="Price-works-img">
+        <div
+          id="Price-works-img"
+          data-aos="fade-left"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="100"
+        >
           <img src="content/imgs/price/creative-process.png" alt="Design">
         </div>
       </div>
 
       <div id="Price-works-container-white" >
-        <div id="Price-works-img">
+        <div
+          id="Price-works-img"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="100"
+        >
           <img src="content/imgs/price/clapperboard.png" alt="Clapperboard">
         </div>
-        <div id="Price-works-text-white">
+        <div
+          id="Price-works-text-white"
+          data-aos="fade-left"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="100"
+        >
           <h1>Продакшн</h1>
           <p>
             На этом этапе начинается утверждение 
@@ -230,7 +301,12 @@
       </div>
 
       <div id="Price-works-container-yellow" >
-        <div id="Price-works-text-yellow">
+        <div
+          id="Price-works-text-yellow"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="100"
+        >
           <h1>Пост-Продакшн</h1>
           <p>
             На этом этапе начинается утверждение 
@@ -238,7 +314,12 @@
             съёмочного процесса.
           </p>
         </div>
-        <div id="Price-works-img">
+        <div
+          id="Price-works-img"
+          data-aos="fade-left"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="100"
+        >
           <img src="content/imgs/price/motion-graphic.png" alt="Motion graphic">
         </div>
       </div>
@@ -247,11 +328,21 @@
 
   <!-- Brands section -->
   <section id="Brands" >
-    <div id="Brands-container" >
-      <div id="Brands-title">
+    <div id="Brands-container">
+      <div
+        id="Brands-title"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="100"
+      >
         <h1>Наши клиенты</h1> 
       </div>
-      <div id="Brands-logo-bg">
+      <div
+        id="Brands-logo-bg"
+        data-aos="fade-left"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="100"
+      >
         <div id="Brands-logo-container">
           <div id="Brands-logo-card">
             <img src="content/imgs/brands/ritzcarlton.png" alt="Ritzcarlton logo">
@@ -286,7 +377,12 @@
   <!-- Contacts section -->
   <section id="Contacts">
     <div id="Contacts-container" >
-      <div id="Contacts-form-container">
+      <div
+        id="Contacts-form-container"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="100"
+      >
         <h1>Связаться с нами</h1>
         <form target="_blank" action="https://formsubmit.co/popov567@gmail.com" method="POST">
           <div>
@@ -296,6 +392,9 @@
               </div>
               <div id="form-group" >
                 <input type="email" name="email" class="form-control" placeholder="Ваш Email" required>
+              </div>
+              <div id="form-group" >
+                <input type="phone" name="phone" class="form-control" placeholder="Номер телефона" required>
               </div>
             </div>
           </div>
@@ -307,7 +406,12 @@
         <p>Нажимая на кнопку "Отправить", вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
       </div>
 
-      <div id="Contacts-cards-container">
+      <div
+        id="Contacts-cards-container"
+        data-aos="fade-left"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="100"
+      >
         <div id="Contacts-card">
 
           <div id="Contacts-card-title">
@@ -438,9 +542,18 @@
     </div>
   </footer>
     
+  <!-- Nav JS -->
   <script src="content/js/main.js"></script>
+
+  <!-- LibLity JS -->
   <script src="/lib/lity/vendor/jquery.js"></script>
   <script src="/lib/lity/dist/lity.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
  </body>
 

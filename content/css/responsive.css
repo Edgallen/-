@@ -167,7 +167,7 @@
 
   /* About-section */
   #About-container {
-    padding: 100px 0 70px 0;
+    padding: 200px 0 150px 0;
   }
   #About-container-container {
     justify-content: flex-start;
@@ -275,7 +275,7 @@
 
   /* Brands section  */
   #Brands-container {
-    padding: 70px 0 0 0;
+    padding: 80px 0 0 0;
   }
   #Brands-title h1 {
     font-size: 5rem;
@@ -299,7 +299,7 @@
 
   /* Contacts section */
   #Contacts-container {
-    padding-top: 70px;
+    padding-top: 50px;
     flex-direction: row;
   }
   #Contacts-form-container {
@@ -381,7 +381,7 @@
 
   /* About section  */
   #About-container {
-    padding: 100px 0 70px 0;
+    padding: 50px 0 70px 0;
   }
   #About-title-container h2 {
     font-size: 1.5rem;
